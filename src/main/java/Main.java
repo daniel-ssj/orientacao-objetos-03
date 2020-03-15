@@ -1,5 +1,6 @@
 import exemplos.Conta;
 import exemplos.Quadrado;
+import exercicios.Circulo;
 import exercicios.Retangulo;
 
 import java.time.LocalDate;
@@ -16,8 +17,13 @@ public class Main {
         Retangulo r1 = Retangulo.criarRetanguloComBaseEAltura(35.7, 10.0);
         Retangulo r2 = new Retangulo(35.7, 10.0);
 
-        System.out.println(r1.calcularArea());
-        System.out.println(r2.calcularArea());
+        Circulo circulo = new Circulo(10.00);
+
+        Circulo circulo2 = Circulo.criarCirculoComRaio(50.78);
+
+        System.out.println(circulo2.calcularPerimetro());
+
+        System.out.println(circulo.calcularArea());
 
         //Quadrado q1 = new Quadrado(20.0);
         //System.out.println(q1.calcularArea());
